@@ -2,10 +2,14 @@ name: Run Bot Every Minute
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 08-16 * * 1-5" # Run on weekdays from 8 AM to 4 PM Pacific Time
+    - cron: "0 10-20 * * 6-7" # Run on weekends from 10 AM to 8 PM Pacific Time
   push:
     branches:
       - "main"
+
+env:
+  TZ: America/Los_Angeles
 
 jobs:
   run-bot:
