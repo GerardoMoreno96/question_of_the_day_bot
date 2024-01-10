@@ -2,14 +2,8 @@ name: Run bot once a day
 
 on:
   schedule:
-    - cron: "0 12 * * 1-5" # Run everyday at 12:00 PM Pacific Time
-  push:
-    branches:
-      - "main"
+    - cron: "0 20 * * 1-5" # Run everyday at 12:00 PM Pacific Time
   workflow_dispatch:
-
-env:
-  TZ: America/Los_Angeles
 
 jobs:
   run-bot:
