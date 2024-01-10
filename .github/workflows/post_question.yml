@@ -1,4 +1,4 @@
-name: Run Bot Every Minute
+name: Run bot once a day
 
 on:
   schedule:
