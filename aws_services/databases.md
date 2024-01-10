@@ -1,0 +1,14 @@
+### **Databases:**
+- The different relational databases in AWS are: RDS, Aurora, and Redshift.
+- Amazon RDS is a relational database service that supports MySQL, Postgres, etc.
+- Amazon Aurora is a fully managed service that's better than RDS. It automatically grows or scales as needed. It uses a database cluster. Use cases: online transaction apps.
+- Redshift is a fully managed warehouse solution. Use cases: online analytical processing apps, data reporting, and analytics.
+- Some non-relational DBs are DynamoDB, DocumentDB.
+- DynamoDB stores data in an item-attributes structure.
+- DocumentDB is a MongoDB compatible DB that stores JSON docs. A table is a collection, a row is called a document, and a column a field.
+- Elasticache is an open-source in-memory database like Memcached & Redis. It is faster than disk databases. Use cases: real-time analytics, distributed session management, geospatial services.
+- Memcached database does not have a data replication feature unlike Redis.
+- AWS Keyspaces is an Apache Cassandra wide column database that can handle large amounts of data.
+- AWS Neptune is a graph database service for apps that need access to many datasets.
+- AWS Timestream is a serverless time series database for IoT and operational apps. Use cases: stock prices, weather changes.
+- AWS Ledger is an immutable transaction log database that tracks each application data change.
