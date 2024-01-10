@@ -36,6 +36,9 @@ def get_random_row_from_random_file(directory):
             return None
 
         random_row = random.choice(lines)
+        while random_row.startswith("#"):
+            random_row = random.choice(lines)
+            
         return random_row.strip()
 
 # Example usage:
